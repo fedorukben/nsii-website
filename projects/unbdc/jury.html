@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../misc/styles.css">
+    <link rel="stylesheet" href="../../colors.css">
+    <link rel="stylesheet" href="../../logos.css">
+    <link rel="icon" href="../../images/nsii-just-lake-square.svg" type="image/x-icon">
+    <script src="../../misc/jury-game.js"></script>
+    <title>
+        Flag Phase Demo - Undergraduate Big Data Challenge 2021
+    </title>
+</head>
+<body>
+<div class="vstack gap-3 pt-4 px-4">
+    <div>
+        <a href="../../index.html">
+            <img src="../../images/nsii-long-trial-gold-cpu.png" alt="logo" class="secondaryPageLogo">
+        </a>
+    </div>
+    <div>
+        <a href="../unbdc.html"><button type="button" class="btn btn-primary mt-3 mb-3">Back</button></a>
+    </div>
+    <div>
+        <h5>The Plebeian Algorithm: A Democratic Approach to Censorship</h5>
+        <h5 class="mt-3">Jury Phase Demonstration</h5>
+    </div>
+    <div class="text-center">
+        <p>Do you believe this post contains misinformation?</p>
+    </div>
+    <div>
+        <p id="post_container" class="jurypost">
+            Click either button to begin the game!
+        </p>
+    </div>
+    <div id="check_user_opinion" class="center">
+        <button id="yesbtn" type="button" onclick="score_post(post, 1)" class="juryGameButton btn btn-lg btn-success mt-3 mb-3">Yes</button>
+        <button id="nobtn" type="button" onclick="score_post(post, 0)" class="juryGameButton btn btn-lg btn-danger mt-3 mb-3">No</button>
+    </div>
+</div>
+
+
+<script src="../../boostrap/jquery-3.3.1.slim.min.js"></script>
+<script src="../../boostrap/popper.min.js"></script>
+<script src="../../boostrap/bootstrap.min.js"></script>
+</body>
+</html>
